@@ -13,18 +13,18 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link to="/aboutme">
-                        Sobre Mi
+                    <Link to="/articles">
+                        Artículos
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/online-undertake">
+                        Emprende Online
                     </Link>
                 </div>
                 <div>
                     <Link to="/gallery">
                         Galería
-                    </Link>
-                </div>
-                <div>
-                    <Link to="/articles">
-                        Articulos
                     </Link>
                 </div>
             </div>
