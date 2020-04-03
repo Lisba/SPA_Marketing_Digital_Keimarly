@@ -118,10 +118,78 @@
 
 .articles {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  padding: 5% 5% 5% 5%;
+  background-color: rgb(255, 255, 255);
+}
+
+.titleArticles {
+  padding: 1%;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 5%;
+}
+
+.groupArticles {
+  padding: 1% 1% 1% 1%;
+  height: 77%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.article {
+  display: flex;
+  width: 44%;
+  margin: 1%;
+  box-shadow: 5px 3px 10px 0px rgba(0,0,0,0.75);
+  height: 33vh;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.one, .three {
+  align-self: flex-start;
+}
+
+.two, .four {
+  align-self: flex-end;
+}
+
+.text {
+  padding: 1% 5% 1% 5%;
+  background: #FFEEAA;
+  /*width: la necesaria;*/
+  margin: 0;/*no influye*/
+  line-height: 1.5rem;
+  position: relative;
+}
+
+.text p {
+  max-height: 6rem;/*line-height por nº de líneas*/
+  overflow: hidden;
+  text-align: justify;
+}
+
+.text p::after {
+  content: '...';
+  background: #FFEEAA;
+  position: absolute;
+  top: 161px;
+  right: 13px;/*max-height menos 1 line-height*/
+}
+
+.divButton {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 1% 3% 1% 3% !important;
 }
 
 /* STYLES OF ONLINE UNDERTAKE */
@@ -162,8 +230,8 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url(/static/media/keima.0d2f5f4d.jpg);
-  background-position: -377px -497px;
+  background-image: url(./img/keima.jpg);
+  background-position: 200px 200px;
   position: absolute;
   top: 83%;
   left: 40%;
@@ -174,6 +242,61 @@
 .footer {
   width: 100%;
   height: 50vh;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(42, 42, 42);
   color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.socialNetworks,
+.name,
+.navButtons {
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  justify-content: center;
+}
+
+.navButtons,
+.socialNetworks {
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialNetworks div {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  align-items: center;
+  height: 34%;
+}
+
+.finalFooter {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.finalFooter .heart {
+  color: #f23a2e;
+}
+
+.finalFooter .wapp:hover,
+.finalFooter .linkedin:hover {
+  font-size: larger;
+}
+
+.finalFooter .wapp {
+  color: rgb(37, 211, 102);
+}
+
+.finalFooter .linkedin {
+  color: rgb(72, 117, 180);
 }

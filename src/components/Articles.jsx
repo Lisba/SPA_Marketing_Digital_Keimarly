@@ -1,14 +1,21 @@
+import Button from 'react-bootstrap/Button'
 import React from 'react'
-import { Parallax, Background } from 'react-parallax'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Article from './Article'
+import art from '../article1'
 
 const Articles = () => {
     return(
         <div className="articles">
-            <div>Articulo1</div>
-            <div>Articulo2</div>
-            <div>Articulo3</div>
-            <div>Articulo4</div>
+            <h1 className="titleArticles">Articulos!!!</h1>
+            <div className="groupArticles">
+                <Article className='one' title={'¿Para que hacemos marketing?'} text={art}/>
+                <Article className='two'/>
+                <Article className='three'/>
+                <Article className='four'/>
+            </div>
+            <div className="divButton">
+                <Button variant="primary">Leer mas -></Button>{' '}
+            </div>
         </div>
     )
 }
