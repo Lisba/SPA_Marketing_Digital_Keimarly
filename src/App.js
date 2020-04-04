@@ -18,7 +18,7 @@ function App() {
             <Articles />
           </Route>
           <Route path="/gallery">
-            Galeria
+            <Gallery />
           </Route>
           <Route path="/online-undertake">
             <OnlineUndertake />

@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const NavButtons = () => {
+const NavButtons = (props) => {
     return(
-        <div className="buttons">
+        <div className={props.classe}>
             <div>
                 <Link to="/">
                     Home

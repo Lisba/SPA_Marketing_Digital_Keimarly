@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* STYLES OF NAVBAR */
@@ -81,37 +81,29 @@
 
 .home {
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.home h1 {
-  position: absolute;
-  text-align: center;
-  z-index: 1;
+.react-parallax-bgimage {
+  top: 43% !important;
+  filter: brightness(0.5) !important;
+}
+
+.react-parallax-content {
+  width: 50%;
   color: white;
+  text-align: center;
+  top: 40%;
+  left: 24%;
 }
 
-.home div {
+.home .react-parallax {
   width: 100%;
-  height: 85vh;
-}
-
-.carousel img {
-  filter: brightness(0.5);
-  position: absolute;
-  bottom: -9%;
-  left: 0%;
-}
-
-.carousel .img3 {
-  filter: brightness(0.5);
-  position: absolute;
-  bottom: -57%;
-  left: 0%;
+  height: 100%;
 }
 
 /* STYLES OF ARTICLES */
@@ -141,11 +133,15 @@
   flex-wrap: wrap;
 }
 
+.groupArticles div img {
+  max-width: 45%;
+}
+
 .article {
   display: flex;
   width: 44%;
   margin: 1%;
-  box-shadow: 5px 3px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
   height: 33vh;
   background-color: rgb(255, 255, 255);
   overflow: hidden;
@@ -161,25 +157,29 @@
 
 .text {
   padding: 1% 5% 1% 5%;
-  background: #FFEEAA;
+  background: #ffffff;
   /*width: la necesaria;*/
   margin: 0;/*no influye*/
-  line-height: 1.5rem;
+  line-height: 160%;
   position: relative;
 }
 
+.text h2 {
+  font-size: 160%;
+}
+
 .text p {
-  max-height: 6rem;/*line-height por nº de líneas*/
+  max-height: 8rem;/*line-height por nº de líneas*/
   overflow: hidden;
   text-align: justify;
 }
 
 .text p::after {
   content: '...';
-  background: #FFEEAA;
+  background: #ffffff;
   position: absolute;
-  top: 161px;
-  right: 13px;/*max-height menos 1 line-height*/
+  top: 173px;
+  right: 19px;/*max-height menos 1 line-height*/
 }
 
 .divButton {
@@ -206,6 +206,7 @@
 }
 
 .online-undertake .react-parallax .react-parallax-bgimage {
+  top: -47% !important;
   filter: brightness(0.5) !important;
 }
 
@@ -220,8 +221,32 @@
 .gallery {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: white;
   color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery > div {
+  /* height: 100%; */
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery .carousel-slider {
+  height: 86%;
+}
+
+.carousel .thumbs-wrapper {
+  margin: 1% 0 0 0 !important;
+}
+
+.carousel {
+  text-align: center;
 }
 
 /* STYLES OF CIRCLE */
@@ -233,7 +258,7 @@
   background-image: url(./img/keima.jpg);
   background-position: 200px 200px;
   position: absolute;
-  top: 83%;
+  top: 98%;
   left: 40%;
 }
 
@@ -241,8 +266,8 @@
 
 .footer {
   width: 100%;
-  height: 50vh;
-  background-color: rgb(42, 42, 42);
+  height: 70vh;
+  background-color: #333333;
   color: aliceblue;
   display: flex;
   justify-content: center;
@@ -260,37 +285,96 @@
 
 .name {
   justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+.name p {
+  color: #737373;
+  margin: 0;
+}
+
+.name p:hover {
+  color: #ffffff;
 }
 
 .navButtons,
 .socialNetworks {
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.groupFooterButtons {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.groupFooterButtons div {
+  padding: 3% 2%;
+}
+
+.groupFooterButtons div a {
+  color: #737373;
+}
+
+.groupFooterButtons div a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .socialNetworks div {
+  width: 45%;
+  height: 34%;
+  margin: 0 0 0 3%;
   display: flex;
   justify-content: space-between;
-  width: 35%;
   align-items: center;
-  height: 34%;
+}
+
+.socialNetworks div div a {
+  color: #737373;
+}
+
+.socialNetworks div div a:hover {
+  font-size: x-large;
+  color: #ffffff;
 }
 
 .finalFooter {
-  width: 50%;
+  width: 53%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
+.finalFooter p {
+  color: #737373;
+  margin: 0;
+}
+
+.finalFooter p:hover {
+  color: #ffffff;
+}
+
 .finalFooter .heart {
   color: #f23a2e;
 }
 
+.finalFooter span:nth-child(2) {
+  height: 1.5rem;
+  margin: 0 0 0 1%;
+}
+
+.finalFooter > span:last-child {
+  height: 1.5rem;
+  margin: 0 0 0 1%;
+}
+
 .finalFooter .wapp:hover,
 .finalFooter .linkedin:hover {
-  font-size: larger;
+  font-size: large;
 }
 
 .finalFooter .wapp {
