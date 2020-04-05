@@ -14,6 +14,18 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
+          <Route path="/instagramArticle">
+            Instagram Article
+          </Route>
+          <Route path="/hotmartArticle">
+            Hotmart Article
+          </Route>
+          <Route path="/youtubeArticle">
+            Yotube Article
+          </Route>
+          <Route path="/googleAdsArticle">
+            Google Ads Article
+          </Route>
           <Route path="/articles">
             <Articles />
           </Route>

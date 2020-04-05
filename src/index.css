@@ -197,6 +197,7 @@
 .online-undertake {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .online-undertake .react-parallax {
@@ -205,12 +206,36 @@
   top: 0;
 }
 
+.online-undertake .googleAdsDiv {
+  position: absolute;
+  top: 9%;
+  left: 55%;
+}
+
+.online-undertake .hotmartDiv {
+  position: absolute;
+  top: 54%;
+  left: 78%;
+}
+
+.online-undertake .youtubeDiv {
+  position: absolute;
+  top: 37%;
+  left: 11%;
+}
+
+.online-undertake .instagramDiv {
+  position: absolute;
+  top: 77%;
+  left: 33%;
+}
+
 .online-undertake .react-parallax .react-parallax-bgimage {
-  top: -47% !important;
+  top: 22% !important;
   filter: brightness(0.5) !important;
 }
 
-.online-undertake div {
+.online-undertake div div {
   top: 50%;
   text-align: center;
   color: white;
