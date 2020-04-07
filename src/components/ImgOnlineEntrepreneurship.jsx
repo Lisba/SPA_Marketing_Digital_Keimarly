@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ImgOnlineUndertake = (props) => {
+const ImgOnlineEntrepreneurship = (props) => {
     return(
         <div className={props.classe}>
             <img src={props.src} alt={props.alt} />
@@ -8,4 +8,4 @@ const ImgOnlineUndertake = (props) => {
     )
 }
 
-export default ImgOnlineUndertake;
+export default ImgOnlineEntrepreneurship;

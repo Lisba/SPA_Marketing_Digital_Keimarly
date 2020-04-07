@@ -88,7 +88,7 @@
   position: relative;
 }
 
-.react-parallax-bgimage {
+.home .react-parallax .react-parallax-bgimage {
   top: 43% !important;
   filter: brightness(0.5) !important;
 }
@@ -192,52 +192,60 @@
   padding: 1% 3% 1% 3% !important;
 }
 
-/* STYLES OF ONLINE UNDERTAKE */
+/* STYLES OF ONLINE ENTREPRENEURSHIP */
 
-.online-undertake {
+.online-entrepreneurship {
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
-.online-undertake .react-parallax {
+.online-entrepreneurship .react-parallax {
   width: 100%;
   height: 100%;
   top: 0;
 }
 
-.online-undertake .googleAdsDiv {
+.online-entrepreneurship .react-parallax .react-parallax-bgimage {
+  top: 50% !important;
+  filter: brightness(0.5) !important;
+}
+
+.online-entrepreneurship .react-parallax .react-parallax-content {
+  text-align: left;
+}
+
+.online-entrepreneurship .googleAdsDiv {
   position: absolute;
   top: 9%;
   left: 55%;
 }
 
-.online-undertake .hotmartDiv {
+.online-entrepreneurship .hotmartDiv {
   position: absolute;
   top: 54%;
-  left: 78%;
+  left: 81%;
 }
 
-.online-undertake .youtubeDiv {
+.online-entrepreneurship .youtubeDiv {
   position: absolute;
-  top: 37%;
-  left: 11%;
+  top: 34%;
+  left: 69%;
 }
 
-.online-undertake .instagramDiv {
+.online-entrepreneurship .instagramDiv {
   position: absolute;
   top: 77%;
-  left: 33%;
+  left: 72%;
 }
 
-.online-undertake .react-parallax .react-parallax-bgimage {
-  top: 22% !important;
-  filter: brightness(0.5) !important;
+.online-entrepreneurship a div img:hover {
+  transform: scale(1.2);
+  transition: all .8s;
 }
 
-.online-undertake div div {
+.online-entrepreneurship div div {
   top: 50%;
-  text-align: center;
   color: white;
 }
 

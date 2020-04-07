@@ -14,7 +14,7 @@ const Articles = () => {
                 <Article className='four' imgRoute={require('../img/electronics.jpg')} alt='img' title={'¿Para qué hacemos marketing?'} text={art4} />
             </div>
             <div className="divButton">
-                <Button variant="primary">Leer mas -></Button>{' '}
+                <Button variant="primary">Leer más >>></Button>{' '}
             </div>
         </div>
     )

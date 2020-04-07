@@ -11,7 +11,7 @@ const Home = (props) => {
             strength={600}
             bgImageStyle={{top:'-50%'}}
             >
-                <h1>Soy Kei Cisnero, especialista en Marketing Digital y Administracion y Gerencia de negocios</h1>
+                <h1>Soy Kei Cisnero, especialista en Marketing Digital, Administracion y Gerencia de negocios</h1>
             </Parallax>
         </div>
     )

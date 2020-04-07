@@ -15,7 +15,7 @@ const NavButtons = (props) => {
                 </Link>
             </div>
             <div>
-                <Link to="/online-undertake">
+                <Link to="/online-entrepreneurship">
                     Emprende Online
                 </Link>
             </div>

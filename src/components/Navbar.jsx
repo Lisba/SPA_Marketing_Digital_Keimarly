@@ -5,7 +5,7 @@ import NavButtons from './NavButtons'
 const Navbar = () => {
     return (
         <div className="navBarDiv">
-            <h1>LOGO</h1>
+            <img src={require('../img/kei-cisnero.jpg')} alt=""/>
             <NavButtons classe="buttons" />
             <div>
                 <SocialNetworks />

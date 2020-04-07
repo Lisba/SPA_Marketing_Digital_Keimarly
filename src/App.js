@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Articles from './components/Articles'
-import OnlineUndertake from './components/OnlineUndertake'
+import OnlineEntrepreneurship from './components/OnlineEntrepreneurship'
 import Gallery from './components/Gallery'
 import Footer from './components/Footer';
 import Circle from './components/Circle'
@@ -32,14 +32,14 @@ function App() {
           <Route path="/gallery">
             <Gallery />
           </Route>
-          <Route path="/online-undertake">
-            <OnlineUndertake />
+          <Route path="/online-entrepreneurship">
+            <OnlineEntrepreneurship />
           </Route>
           <Route path="/">
             <Home />
             <Circle classi="circle" src={require('./img/keima.jpg')} alt="circle-image" />
             <Articles />
-            <OnlineUndertake />
+            <OnlineEntrepreneurship />
             <Gallery />
             <Footer />
           </Route>
