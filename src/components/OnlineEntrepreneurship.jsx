@@ -10,16 +10,16 @@ const OnlineEntrepreneurship = () => {
                 <h1>Emprende Online >>></h1>
             </Parallax>
             <Link to="/googleAdsArticle">
-                <ImgOnlineEntrepreneurship classe="googleAdsDiv" src={require('../img/g.png')} alt="googleAds" />
+                <ImgOnlineEntrepreneurship classe="googleAdsDiv" src={require('../img/g-color.png')} alt="googleAds" />
             </Link>
             <Link to="/youtubeArticle">
-                <ImgOnlineEntrepreneurship classe="youtubeDiv" src={require('../img/y.png')} alt="youtube" />
+                <ImgOnlineEntrepreneurship classe="youtubeDiv" src={require('../img/y-color.png')} alt="youtube" />
             </Link>
             <Link to="/hotmartArticle">
-                <ImgOnlineEntrepreneurship classe="hotmartDiv" src={require('../img/h.png')} alt="hotmart" />
+                <ImgOnlineEntrepreneurship classe="hotmartDiv" src={require('../img/h-color.png')} alt="hotmart" />
             </Link>
-            <Link to="/instagramArticle">
-                <ImgOnlineEntrepreneurship classe="instagramDiv" src={require('../img/i.png')} alt="instagram" />
+            <Link to="/articles/instagramArticle">
+                <ImgOnlineEntrepreneurship classe="instagramDiv" src={require('../img/i-color.png')} alt="instagram" />
             </Link>
         </div>
     )
