@@ -1,12 +1,8 @@
 import Button from 'react-bootstrap/Button'
 import React from 'react'
 import ArticleCard from './ArticleCard'
-import * as articleContent from '../textArticles'
+import articles from '../textArticles'
 import { Link } from 'react-router-dom'
-
-let arrString = articleContent.title4.split(" ");
-let newString = arrString.join('-');
-console.log(newString);
 
 const ArticleHome = () => {
 
@@ -16,18 +12,19 @@ const ArticleHome = () => {
         <div className="articlesDiv">
             <h1 className="titleArticles">Artículos</h1>
             <div className="groupArticles">
-                <Link to="/articles/why-marketing" className="articleLink upper">
-                    <ArticleCard className={classNameArticleCard} imgRoute={require('../img/img1.jpg')} alt='img' title={articleContent.title1} text={articleContent.article1} />
-                </Link>
-                <Link to="/articles/what-is-branding" className="articleLink lower">
-                    <ArticleCard className={classNameArticleCard} imgRoute={require('../img/computer-with-keyboard.jpg')} alt='img' title={articleContent.title2} text={articleContent.article2} />
-                </Link>
-                <Link to={`/articles/por-que-hacemos-marketing`} className="articleLink upper">
-                    <ArticleCard className={classNameArticleCard} imgRoute={require('../img/workDesk.jpg')} alt='img' title={articleContent.title3} text={articleContent.article3} />
-                </Link>
-                <Link to={`/articles/${newString}`} className="articleLink lower">
-                    <ArticleCard className={classNameArticleCard} imgRoute={require('../img/electronics.jpg')} alt='img' title={articleContent.title4} text={articleContent.article4} />
-                </Link>
+                <ul className="groupArticlesUl">
+                    {
+                        articles.map(item => 
+                            ( (item.id <= 4) ?
+                                <li key={item.id} className={`${item.id % 2 === 0 ? 'lower' : 'upper'}`}>
+                                    <Link to={`/articles/${item.id}`} className={`articleLink`}>
+                                        <ArticleCard className={classNameArticleCard} imgRoute={require('../img/img1.jpg')} alt='img' title={item.title} text={item.text} />
+                                    </Link>
+                                </li> : null
+                            )
+                        )
+                    }
+                </ul>
             </div>
             <div className="articleReadMoreButton">
                 <Link to="/articles">
@@ -39,4 +36,3 @@ const ArticleHome = () => {
 }
 
 export default ArticleHome;
-export { newString };
