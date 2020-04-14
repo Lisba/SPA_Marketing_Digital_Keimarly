@@ -130,8 +130,6 @@
   padding: 1% 1% 1% 1%;
   height: 77%;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .groupArticles ul {
@@ -216,6 +214,27 @@
 .btn {
   width: 100%;
   padding: 8% 12% 8% 12%;
+}
+
+.articleContentDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.articleContentH1 {
+  padding: 2% 0%;
+}
+
+.articleContentH2 {
+  width: 65%;
+}
+
+.articleContentP {
+  width: 65%;
+  margin: 0 0 2em 0;
+  font-size: 131%;
 }
 
 /* STYLES OF ONLINE ENTREPRENEURSHIP */
