@@ -1,12 +1,21 @@
 import Button from 'react-bootstrap/Button'
 import React from 'react'
 import ArticleCard from './ArticleCard'
-import articles from '../textArticles'
+import articles from '../EntryPointArticles'
 import { Link } from 'react-router-dom'
 
 const ArticleHome = () => {
 
     const classNameArticleCard = "articleCard";
+    
+    const [img, setImg] = React.useState('')
+
+    React.useEffect(() => {
+        import(`../${articles[1].cover_image}`)
+        .then(res => setImg(res.default))
+        console.log(img)
+    }, [img])
+
 
     return(
         <div className="articlesDiv">
@@ -17,8 +26,8 @@ const ArticleHome = () => {
                         articles.map(item => 
                             ( (item.id <= 4) ?
                                 <li key={item.id} className={`${item.id % 2 === 0 ? 'lower' : 'upper'}`}>
-                                    <Link to={`/articles/${item.id}`} className={`articleLink`}>
-                                        <ArticleCard className={classNameArticleCard} imgRoute={require('../img/img1.jpg')} alt='img' title={item.title} text={item.text} />
+                                    <Link to={`/articles/${item.id}`} className={`articleLink card${item.id}`}>
+                                        <ArticleCard className={classNameArticleCard} imgRoute={img} alt='img' title={item.title} text={item.description} />
                                     </Link>
                                 </li> : null
                             )
