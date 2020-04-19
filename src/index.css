@@ -216,26 +216,28 @@
   padding: 8% 12% 8% 12%;
 }
 
+.articleContent {
+  display: flex;
+  justify-content: center;
+}
+
 .articleContentDiv {
-  width: 100%;
+  width: 65%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.articleContentH1 {
-  padding: 2% 0%;
+/* .articleContentDiv h1 {
+  font-size: 34px;
 }
 
-.articleContentH2 {
-  width: 65%;
+.articleContentDiv h2 {
+  font-size: 29px;
 }
 
-.articleContentP {
-  width: 65%;
-  margin: 0 0 2em 0;
-  font-size: 131%;
-}
+.articleContentDiv P {
+  font-size: 21px;
+} */
 
 /* STYLES OF ONLINE ENTREPRENEURSHIP */
 
