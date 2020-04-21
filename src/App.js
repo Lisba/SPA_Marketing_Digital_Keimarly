@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import ArticleHome from './components/ArticleHome'
-import OnlineEntrepreneurship from './components/OnlineEntrepreneurship'
-import Gallery from './components/Gallery'
-import Footer from './components/Footer';
-import Circle from './components/Circle'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 import ArticleContent from './components/ArticleContent';
+import OnlineEntrepreneurship from './components/OnlineEntrepreneurship';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
+import Circle from './components/Circle';
+
+const ArticleHome = React.lazy(() => import('./components/ArticleHome'));
 
 function App() {
   return (
@@ -16,28 +17,37 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact strict path="/articles/:id">
-            <ArticleContent />
+              <ArticleContent />
           </Route>
+
           <Route exact path="/gallery">
             <Gallery />
             <Footer />
           </Route>
+          
           <Route exact path="/online-entrepreneurship">
             <OnlineEntrepreneurship />
             <Footer />
           </Route>
+          
           <Route exact path="/articles">
-            <ArticleHome />
+            <Suspense fallback={<div className="suspense-div"><h1 className="suspense-h1">Loading Posts...</h1></div>}>
+              <ArticleHome />
+            </Suspense>
             <Footer />
           </Route>
+          
           <Route exact path="/">
             <Home />
             <Circle classi="circle" src={require('./img/keima.jpg')} alt="circle-image" />
-            <ArticleHome />
+            <Suspense fallback={<div className="suspense-div"><h1 className="suspense-h1">Loading Posts...</h1></div>}>
+              <ArticleHome />
+            </Suspense>
             <OnlineEntrepreneurship />
             <Gallery />
             <Footer />
           </Route>
+          
           <Redirect to="/" />
         </Switch>
       </div>
