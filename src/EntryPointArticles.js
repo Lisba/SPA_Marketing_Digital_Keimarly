@@ -10,7 +10,7 @@ export default [
             },
         tags: ["marketing digital", "guia"],
         description: "En estos últimos cuatro años, millones de personas siguen incorporándose a internet. Para subir contenido, canciones, comprar, vender, hacer negocios e interactuar por internet. Debemos estar preparados para hacer negocios con estos nuevos potenciales clientes. Lo que se busca es llegar a mercados más amplios, la meta es incorporar a la mayor cantidad de personas posibles que aún no tienen acceso a internet. Existen iniciativas como la de Facebook (internet.or) que intentan lograr el acceso wifi a través de aviones o Project loom, por medio de globos aerostáticos. Hay muchas oportunidades de negocios todavía, pero para desarrollarlas tenemos que entender en qué momento y qué sucede con cada una de estas tecnologías.",
-        date: "Apr 20, 2020"
+        date: "Apr 23, 2020"
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export default [
             },
         tags: ["marketing digital", "branding", "marca", "guia"],
         description: "El branding es el proceso de creación, desarrollo y construcción de marca. Cuando hablamos de una marca la gente cree que es un logotipo, la marca no es solo un logotipo, sino que tiene que ver con lo que la gente dice, siente o piensa sobre un producto, sobre un servicio. Tiene que ver más con lo intangible, es lo que la marca representa, sus valores, su ADN, su espíritu.",
-        date: "Apr 20, 2020",
+        date: "Apr 22, 2020",
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ export default [
             },
         tags: ["marketing digital", "branding", "marca", "guia"],
         description: "Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años. Tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
-        date: "Apr 20, 2020"
+        date: "Apr 21, 2020"
     },
     {
         id: 4,

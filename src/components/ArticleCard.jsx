@@ -1,24 +1,23 @@
-import React from 'react'
-import articles from '../EntryPointArticles'
+import React from 'react';
+import articles from '../EntryPointArticles';
 
 const ArticleCard = (props) => {
 
     let actualData = {};
-    const [img, setImg] = React.useState('')
+    const [img, setImg] = React.useState('');
 
     articles.map(item => 
     {
         if(item.cover_image === props.imgRoute)
         {
             actualData = item;
-            return true
         }
-        return false
-    })
+        return true;
+    });
 
     import(`../${actualData.cover_image}`)
-    .then(res => setImg(res.default))
-    .catch(err => console.log(err.message))
+    .then(response => setImg(response.default))
+    .catch(error => console.log(error.message));
 
     return(
         <div className={props.className}>

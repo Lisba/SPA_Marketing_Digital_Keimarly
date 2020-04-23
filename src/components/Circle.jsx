@@ -1,10 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const Circle = (props) => {
     return(
-        <div className={props.classi}>
-            
-        </div>
+        <div className={props.classi}></div>
     )
 }
 

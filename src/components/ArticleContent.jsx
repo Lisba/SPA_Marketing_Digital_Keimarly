@@ -1,7 +1,7 @@
-import React, { Suspense } from 'react'
-import Footer from './Footer'
-import { useParams } from 'react-router-dom'
-import articles from '../EntryPointArticles'
+import React, { Suspense } from 'react';
+import Footer from './Footer';
+import { useParams } from 'react-router-dom';
+import articles from '../EntryPointArticles';
 
 const Post = React.lazy( () => import(`./Post`));
 
@@ -20,10 +20,11 @@ const ArticleContent = () => {
             articleData = item;
         }
         return true;
-    })
+    });
 
     import(`../${articleData.cover_image}`)
-    .then(res => setImg(res.default))
+    .then(response => setImg(response.default))
+    .catch(error => console.log(error.message));
 
     React.useEffect( () => {
 
@@ -34,7 +35,7 @@ const ArticleContent = () => {
             .then(res => setPost(res.default))
         })()
 
-    }, [id])
+    }, [id]);
 
     return (
         <React.Fragment>

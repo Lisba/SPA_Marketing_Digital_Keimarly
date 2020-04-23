@@ -1,6 +1,6 @@
-import React from 'react'
-import SocialNetworks from './SocialNetworks'
-import NavButtons from './NavButtons'
+import React from 'react';
+import SocialNetworks from './SocialNetworks';
+import NavButtons from './NavButtons';
 
 const Footer = () => {
     return(

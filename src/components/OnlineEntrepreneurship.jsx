@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link }from 'react-router-dom'
+import React from 'react';
+import { Link }from 'react-router-dom';
 import { Parallax } from 'react-parallax';
 import ImgOnlineEntrepreneurship from './ImgOnlineEntrepreneurship';
 

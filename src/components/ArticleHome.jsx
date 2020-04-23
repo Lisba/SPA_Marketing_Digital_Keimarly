@@ -1,8 +1,8 @@
-import Button from 'react-bootstrap/Button'
-import React from 'react'
-import ArticleCard from './ArticleCard'
-import articles from '../EntryPointArticles'
-import { Link } from 'react-router-dom'
+import Button from 'react-bootstrap/Button';
+import React from 'react';
+import ArticleCard from './ArticleCard';
+import articles from '../EntryPointArticles';
+import { Link } from 'react-router-dom';
 
 const ArticleHome = () => {
 
