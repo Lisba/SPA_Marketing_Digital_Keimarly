@@ -7,19 +7,6 @@ import { Link } from 'react-router-dom'
 const ArticleHome = () => {
 
     const classNameArticleCard = "articleCard";
-    const [img, setImg] = React.useState([])
-
-    React.useEffect(() => 
-    {
-        articles.map(item => 
-        {
-            console.log(item.cover_image)
-            import(`../${item.cover_image}`)
-            .then(res => setImg(img => [...img, res.default]))
-            .catch(err => console.log(err.message))
-            return true
-        })
-    }, [])
 
     return(
         <div className="articlesDiv">
@@ -31,7 +18,7 @@ const ArticleHome = () => {
                         ( (item.id <= 4) ?
                             <li key={item.id} className={`${item.id % 2 === 0 ? 'lower' : 'upper'}`}>
                                 <Link to={`/articles/${item.id}`} className={`articleLink card${item.id}`}>
-                                    <ArticleCard className={classNameArticleCard} imgRoute={img[i]} title={item.title} text={item.description} />
+                                    <ArticleCard className={classNameArticleCard} imgRoute={item.cover_image} alt={item.cover_image} title={item.title} text={item.description} />
                                 </Link>
                             </li> : null
                         ))
