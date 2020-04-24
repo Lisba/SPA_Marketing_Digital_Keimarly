@@ -3,21 +3,24 @@ import articles from '../EntryPointArticles';
 
 const ArticleCard = (props) => {
 
-    let actualData = {};
     const [img, setImg] = React.useState('');
+    
+    React.useEffect(() => {
+        let actualData = {};
 
-    articles.map(item => 
-    {
-        if(item.cover_image === props.imgRoute)
+        articles.map(item => 
         {
-            actualData = item;
-        }
-        return true;
-    });
-
-    import(`../${actualData.cover_image}`)
-    .then(response => setImg(response.default))
-    .catch(error => console.log(error.message));
+            if(item.cover_image === props.imgRoute)
+            {
+                actualData = item;
+            }
+            return true;
+        });
+    
+        import(`../${actualData.cover_image}`)
+        .then(response => setImg(response.default))
+        .catch(error => console.log(error.message));
+    }, [props.imgRoute]);
 
     return(
         <div className={props.className}>
