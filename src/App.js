@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import ArticleContent from './components/ArticleContent';
@@ -7,6 +7,7 @@ import OnlineEntrepreneurship from './components/OnlineEntrepreneurship';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import Circle from './components/Circle';
+import NotFound from './components/NotFoundPage';
 
 const ArticleHome = React.lazy(() => import('./components/ArticleHome'));
 
@@ -47,8 +48,10 @@ function App() {
             <Gallery />
             <Footer />
           </Route>
-          
-          <Redirect to="/" />
+
+          <Route path="*">
+            <NotFound />
+          </Route>
         </Switch>
       </div>
     </BrowserRouter>

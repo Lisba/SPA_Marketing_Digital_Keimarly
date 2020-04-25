@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import React from 'react';
 import ArticleCard from './ArticleCard';
-import articles from '../EntryPointArticles';
+import Articles from '../EntryPointArticles';
 import { Link } from 'react-router-dom';
 
 const ArticleHome = () => {
@@ -14,7 +14,7 @@ const ArticleHome = () => {
             <div className="groupArticles">
                 <ul className="groupArticlesUl">
                     {
-                        articles.map((item, i) => 
+                        Articles.map((item) => 
                         ( (item.id <= 4) ?
                             <li key={item.id} className={`${item.id % 2 === 0 ? 'lower' : 'upper'}`}>
                                 <Link to={`/articles/${item.id}`} className={`articleLink card${item.id}`}>

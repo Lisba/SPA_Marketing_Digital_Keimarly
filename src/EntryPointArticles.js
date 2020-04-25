@@ -3,6 +3,7 @@ export default [
         id: 1,
         title: "¿Para que hacemos Marketing?",
         folder: "./posts/post1.mdx",
+        icon: "img/electronics.jpg",
         cover_image: "img/electronics.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -16,6 +17,7 @@ export default [
         id: 2,
         title: "¿Que es el branding de marca?",
         folder: "./posts/post2.mdx",
+        icon: "img/workDesk.jpg",
         cover_image: "img/workDesk.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -29,6 +31,7 @@ export default [
         id: 3,
         title: "¿Por que hacemos Marketing?",
         folder: "./posts/post3.mdx",
+        icon: "img/womanInSofa.jpg",
         cover_image: "img/womanInSofa.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -42,6 +45,7 @@ export default [
         id: 4,
         title: "¿Entonces cuando Marketing?",
         folder: "./posts/post4.mdx",
+        icon: "img/computer-desk.jpg",
         cover_image: "img/computer-desk.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -55,7 +59,8 @@ export default [
         id: 5,
         title: "Google Ads Article",
         folder: "./posts/post5.mdx",
-        cover_image: "img/computer-desk.jpg",
+        icon: "img/g-color.png",
+        cover_image: "img/computer-with-keyboard.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -68,7 +73,8 @@ export default [
         id: 6,
         title: "Youtube Article",
         folder: "./posts/post6.mdx",
-        cover_image: "img/computer-desk.jpg",
+        icon: "img/y-color.png",
+        cover_image: "img/person-holding-tablet.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -81,7 +87,8 @@ export default [
         id: 7,
         title: "Hotmart Article",
         folder: "./posts/post7.mdx",
-        cover_image: "img/computer-desk.jpg",
+        icon: "img/h-color.png",
+        cover_image: "img/person-using-macbook.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -94,7 +101,8 @@ export default [
         id: 8,
         title: "Instagram Article",
         folder: "./posts/post8.mdx",
-        cover_image: "img/computer-desk.jpg",
+        icon: "img/i-color.png",
+        cover_image: "img/smilingWoman.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"

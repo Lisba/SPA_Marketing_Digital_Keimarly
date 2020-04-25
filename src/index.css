@@ -135,9 +135,9 @@
 
 .titleArticles {
   padding: 1%;
-    font-weight: bold;
-    text-decoration: underline;
-    margin-top: 5%;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-top: 5%;
 }
 
 .groupArticles {
@@ -250,18 +250,6 @@
   flex-direction: column;
 }
 
-/* .articleContentDiv h1 {
-  font-size: 34px;
-}
-
-.articleContentDiv h2 {
-  font-size: 29px;
-}
-
-.articleContentDiv P {
-  font-size: 21px;
-} */
-
 /* STYLES OF ONLINE ENTREPRENEURSHIP */
 
 .online-entrepreneurship {
@@ -285,25 +273,25 @@
   text-align: left;
 }
 
-.online-entrepreneurship .googleAdsDiv {
+.online-entrepreneurship .div5 {
   position: absolute;
   top: 9%;
   left: 55%;
 }
 
-.online-entrepreneurship .hotmartDiv {
-  position: absolute;
-  top: 54%;
-  left: 81%;
-}
-
-.online-entrepreneurship .youtubeDiv {
+.online-entrepreneurship .div6 {
   position: absolute;
   top: 34%;
   left: 69%;
 }
 
-.online-entrepreneurship .instagramDiv {
+.online-entrepreneurship .div7 {
+  position: absolute;
+  top: 54%;
+  left: 81%;
+}
+
+.online-entrepreneurship .div8 {
   position: absolute;
   top: 77%;
   left: 72%;
