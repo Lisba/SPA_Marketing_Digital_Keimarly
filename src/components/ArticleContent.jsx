@@ -39,21 +39,23 @@ const ArticleContent = () => {
         <React.Fragment>
             {
                 (!boolean) ? <NotFoundPage /> :
-                <article className="articleContent">
-                    <div className="articleContentHeader">
-                        <div className="articleContentTitleDiv"><h1 className="articleContentTitle">{articleData.title}</h1></div>
-                        <div className="articleContentAuthor">{articleData.author.name}</div>
-                        <div className="articleContentDate">{articleData.date}</div>
-                        <div className="articleContentImgDiv"><img className="articleContentImg" src={require('../' + articleData.cover_image)} alt="img"/></div>
-                    </div>
-                    <div className="articleContentDiv">
-                        <Suspense fallback={<div className="suspense-div"><h1 className="suspense-h1">Loading Post...</h1></div>}>
-                            <Post postContent={post}/>
-                        </Suspense>
-                    </div>
-                </article>
+                <React.Fragment>
+                    <article className="articleContent">
+                        <div className="articleContentHeader">
+                            <div className="articleContentTitleDiv"><h1 className="articleContentTitle">{articleData.title}</h1></div>
+                            <div className="articleContentAuthor">{articleData.author.name}</div>
+                            <div className="articleContentDate">{articleData.date}</div>
+                            <div className="articleContentImgDiv"><img className="articleContentImg" src={require('../' + articleData.cover_image)} alt="img"/></div>
+                        </div>
+                        <div className="articleContentDiv">
+                            <Suspense fallback={<div className="suspense-div"><h1 className="suspense-h1">Loading Post...</h1></div>}>
+                                <Post postContent={post}/>
+                            </Suspense>
+                        </div>
+                    </article>
+                    <Footer />
+                </React.Fragment>
             } {/*This ternary operator for the case a Dynamic Route doesn't exist*/}
-            <Footer />
         </React.Fragment>
     )
 }

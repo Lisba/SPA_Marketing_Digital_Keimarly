@@ -31,8 +31,8 @@ export default [
         id: 3,
         title: "¿Por que hacemos Marketing?",
         folder: "./posts/post3.mdx",
-        icon: "img/womanInSofa.jpg",
-        cover_image: "img/womanInSofa.jpg",
+        icon: "img/woman-raising-hands.jpg",
+        cover_image: "img/woman-raising-hands.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -52,7 +52,7 @@ export default [
             "email": "keimarly.mc@gmail.com"
             },
         tags: ["marketing digital", "branding", "marca", "guia"],
-        description: "Post 4! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años. Tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
+        description: "Post 4!! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
         date: "Apr 20, 2020"
     },
     {

@@ -16,7 +16,7 @@ const ArticleCard = (props) => {
 
     return(
         <div className={props.className}>
-            <img src={require('../' + actualData.cover_image)} alt={props.alt}/>
+            <img src={require('../' + actualData.icon)} alt={props.alt}/>
             <div className="articleCardText">
                 <h2>{props.title}</h2>
                 <p>{props.text}</p>
