@@ -23,12 +23,15 @@
   width: 100%;
 }
 
-.navBarDiv h1 {
-  width: 10%;
-  padding: 0 5%;
+.navBarDiv .burgerMenu {
+  display: none;
 }
 
-.navBarDiv div {
+.navBarDiv .burgerMenuOpened {
+  display: none;
+}
+
+.navBarDiv > div {
   display: flex;
   width: 15%;
   justify-content: space-evenly;
@@ -41,6 +44,7 @@
 }
 
 .navBarDiv .buttons div {
+  width: 100%;
   text-align: center;
 }
 
@@ -48,6 +52,11 @@
   color: var(--theme-color);
   font-size: large;
   text-decoration: none;
+}
+
+.navBarDiv .socialNetworkDiv > div {
+  width: 100%;
+  text-align: center
 }
 
 .navBarDiv div div a {
@@ -241,7 +250,8 @@
 }
 
 .articleContentHeader {
-  width: 60%;
+  width: 90%;
+  max-width: 800px;
 }
 
 .articleContentImg {
@@ -249,9 +259,15 @@
 }
 
 .articleContentDiv {
-  width: 60%;
+  width: 90%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
+}
+
+.articleContentDiv img {
+  width: 100%;
+  align-self: center;
 }
 
 /* STYLES OF ONLINE ENTREPRENEURSHIP */
@@ -315,33 +331,29 @@
 
 .gallery {
   width: 100%;
-  height: 100vh;
   background-color: white;
   color: aliceblue;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 3% 0 0 0;
 }
 
 .gallery > div {
-  /* height: 100%; */
-  height: 90%;
+  height: 100%;
   width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery .carousel-slider {
-  height: 86%;
-}
-
-.carousel .thumbs-wrapper {
-  margin: 1% 0 0 0 !important;
 }
 
 .carousel {
   text-align: center;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .thumbs-wrapper.axis-vertical {
+  margin: 10px;
 }
 
 /* STYLES OF CIRCLE */
@@ -402,12 +414,14 @@
 
 .groupFooterButtons {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 32%;
 }
 
 .groupFooterButtons div {
   padding: 3% 2%;
+  text-align: center;
 }
 
 .groupFooterButtons div a {
@@ -481,7 +495,7 @@
   color: rgb(72, 117, 180);
 }
 
-/* STYLES OF PAGE 404 NOT FOUND */
+/* STYLES OF 404 NOT FOUND PAGE */
 
 #notfound {
   position: relative;
@@ -600,11 +614,69 @@
 
 @media only screen and (max-width: 768px) {
 
+  /* STYLES OF NAVBAR */
+
+  .navBarDiv {
+    display: flex;
+  }
+
+  .navBarDiv .socialNetworkDiv {
+    width: 30%;
+  }
+  
+  .navBarDiv .buttons {
+    display: none;
+  }
+
+  .navBarDiv .burgerMenu {
+    display: flex;
+    width: 10%;
+    font-size: 200%;
+  }
+
+  .navBarDiv .burgerMenuOpened {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-color);
+    transition: all 0.5s;
+  }
+  
+  .navBarDiv .burgerMenuOpened .burgerMenuButtons > div {
+    margin: 15% 0;
+    font-size: 200%;
+    text-align: center;
+  }
+
+  .navBarDiv .burgerMenuOpened .cerrar {
+    font-size: 250%;
+    position: absolute;
+    top: 2%;
+    right: 6%;
+  }
+
+  /* STYLES OF ARTICLES */
+
+
+
+  /* STYLES OF GALLERY */
+
+  .gallery > div {
+    width: 90%;
+  }
+
   /* STYLES OF FOOTER */
   
   .name {
-    justify-content: center;
-    align-content: space-evenly;
+    width: 90%;
   }
 
   .name p {
@@ -612,64 +684,54 @@
   }
 
   .navButtons {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    width: 90%;
     justify-content: space-evenly;
   }
 
   .groupFooterButtons {
-    display: flex;
-    flex-flow: column wrap;
-    width: 80%;
-    height: 13vh;
+    width: 100%;
+    height: 10vh;
     align-items: center;
+  }
+
+  .groupFooterButtons div {
+    padding: 3% 2%;
+    text-align: center;
+    width: 25%;
   }
   
   .socialNetworks {
-    flex-direction: column;
-    align-items: center;
+    width: 60%;
     justify-content: space-evenly;
   }
   
   .socialNetworks div {
-    width: 80%;
-    margin: 0 0 0 3%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
     font-size: x-large;
   }
   
   .finalFooter {
     width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     align-content: space-evenly;
   }
   
   .finalFooter p {
-    color: #737373;
-    margin: 0;
     text-align: center;
   }
 
   .finalFooter span:nth-child(2) {
-    height: 1.5rem;
-    margin: 0 0 0 1%;
     font-size: x-large;
   }
   
   .finalFooter > span:last-child {
-    height: 1.5rem;
-    margin: 0 0 0 1%;
+    margin: 0 0 0 2%;
     font-size: x-large;
   }
   
 }
+
+/* STYLES OF 404 NOT FOUND PAGE */
     
 @media only screen and (max-width: 480px) {
   .notfound .notfound-404 {

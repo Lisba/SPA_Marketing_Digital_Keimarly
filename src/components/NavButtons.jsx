@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const NavButtons = (props) => {
     return(
-        <div className={props.classe}>
+        <div className={props.className}>
             <div>
                 <Link to="/">
                     Home

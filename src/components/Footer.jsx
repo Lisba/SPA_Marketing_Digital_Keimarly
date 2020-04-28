@@ -7,11 +7,11 @@ const Footer = () => {
         <div className="footer">
             <div className="name">
                 <h3>Kei Cisnero</h3>
-                <p>Profesional del Marketing Digital - Técnico universitario en Administración y Gerencia</p>
+                <p>Profesional del Marketing Digital - Técnico universitario en Administración y Gerencia.</p>
             </div>
             <div className="navButtons">
                 <h3>Navegacion</h3>
-                <NavButtons classe="groupFooterButtons" />
+                <NavButtons className="groupFooterButtons" />
             </div>
             <div className="socialNetworks">
                 <h3>Sígueme:</h3>
