@@ -9,7 +9,7 @@ const Post = React.lazy( () => import(`./Post`));
 const ArticleContent = () => {
     
     let {id} = useParams();
-    let parsedId = parseInt(id); // For console warnings
+    let parsedId = parseInt(id); // For console warning.
     const [post, setPost] = React.useState('');
     let articleData = {};
     let boolean = false;
@@ -27,7 +27,7 @@ const ArticleContent = () => {
     React.useEffect( () => {
 
         // const MDXPost = await import(`../posts/post${parsedId}.mdx`); //With Asyn/Await method.
-        import(`../posts/post${parsedId}.mdx`) //With promise method
+        import(`../posts/post${parsedId}.mdx`) //With promise method.
         .then(response => setPost(response.default))
         .catch(error => console.log(error.message))
         // const postObj = require('../posts/post' + parsedId + '.mdx'); //With require() method.
