@@ -100,6 +100,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: -1;
 }
 
 .home .react-parallax .react-parallax-bgimage {
@@ -118,6 +119,19 @@
 .home .react-parallax {
   width: 100%;
   height: 100%;
+}
+
+/* STYLES OF CIRCLE */
+
+.circle {
+  text-align: center;
+  margin: -100px 0 0 0;
+  z-index: 0;
+}
+
+.circle > img {
+  border-radius: 50%;
+  max-width: 200px;
 }
 
 /* STYLES OF ARTICLES */
@@ -150,7 +164,7 @@
   padding: 1%;
   font-weight: 500;
   text-decoration: underline;
-  margin-top: 5%;
+  color: #000;
 }
 
 .groupArticles {
@@ -226,7 +240,7 @@
   right: 19px;/*max-height menos 1 line-height*/
 }
 
-.articleReadMoreButton {
+.articlesDiv .articleReadMoreButton {
   width: 100%;
   margin: 2% 0 0 0;
   display: flex;
@@ -234,14 +248,16 @@
   align-items: center;
 }
 
-.articleReadMoreButton a {
-  width: 15%;
+.articlesDiv .articleReadMoreButton > a {
+  width: 20%;
 }
 
 .btn {
   width: 100%;
   padding: 8% 12% 8% 12%;
 }
+
+/* STYLES OF ARTICLES CONTENT */
 
 .articleContent {
   display: flex;
@@ -252,20 +268,38 @@
 .articleContentHeader {
   width: 90%;
   max-width: 800px;
+  margin: 30px 0 0 0;
 }
 
 .articleContentImg {
   width: 100%;
 }
 
-.articleContentDiv {
+.articleContentBody {
   width: 90%;
   max-width: 800px;
   display: flex;
   flex-direction: column;
+  margin: 30px 0 30px 0;
+  font-size: 21px;
 }
 
-.articleContentDiv img {
+.articleContentBody > h1,
+.articleContentBody > h2,
+.articleContentBody > h3,
+.articleContentBody > h4,
+.articleContentBody > h5,
+.articleContentBody > h6 {
+  margin-bottom: 1rem;
+}
+
+.articleContentBody > p,
+.articleContentBody > ol,
+.articleContentBody > ul {
+  margin-bottom: 2rem;
+}
+
+.articleContentBody img {
   width: 100%;
   align-self: center;
 }
@@ -354,19 +388,6 @@
 
 .carousel .thumbs-wrapper.axis-vertical {
   margin: 10px;
-}
-
-/* STYLES OF CIRCLE */
-
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-image: url(./img/keima.jpg);
-  background-position: 200px 200px;
-  position: absolute;
-  top: 98%;
-  left: 40%;
 }
 
 /* STYLES OF FOOTER */
@@ -630,13 +651,14 @@
 
   .navBarDiv .burgerMenu {
     display: flex;
-    width: 10%;
-    font-size: 200%;
+    width: 12%;
+    font-size: 180%;
+    padding: 0 0 0 5%;
   }
 
   .navBarDiv .burgerMenuOpened {
-    width: 100%;
-    height: 100vh;
+    width: 90%;
+    height: 104vh;
     position: fixed;
     top: 0%;
     left: 100%;
@@ -646,28 +668,109 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: var(--theme-color);
+    background-color: white;
+    color: var(--theme-color);
     transition: all 0.5s;
+    overflow-y: scroll;
   }
   
-  .navBarDiv .burgerMenuOpened .burgerMenuButtons > div {
+  .navBarDiv .burgerMenuOpened .socialNetworksList .burgerMenuButtons > div {
     margin: 15% 0;
     font-size: 200%;
     text-align: center;
   }
 
   .navBarDiv .burgerMenuOpened .cerrar {
-    font-size: 250%;
+    font-size: 200%;
     position: absolute;
-    top: 2%;
-    right: 6%;
+    top: 4%;
+    right: 10%;
+  }
+
+  .navBarDiv .burgerMenuOpened .socialNetworksList .burgerMenuButtons > div > a{
+    color: var(--theme-color);
+  }
+
+    /* STYLES OF HOME */
+
+  .home {
+    height: 87vh;
+  }
+
+  .home .react-parallax .react-parallax-content {
+    width: 90%;
+    top: 40%;
+    left: 5%;
+  }
+  
+  .home .react-parallax .react-parallax-bgimage {
+    left: 71% !important;
+  }
+
+  .home .react-parallax .react-parallax-content > h1 {
+    font-size: 1.5rem;
   }
 
   /* STYLES OF ARTICLES */
 
+  .articlesDiv {
+    height: 100%;
+    padding: 5% 5% 10% 5%;
+  }
 
+  .articlesDiv .titleArticles {
+    margin: 0 0 10% 0;
+  }
+
+  .articlesDiv .articleReadMoreButton > a {
+    width: 60%;
+  }
+
+  .articlesDiv .groupArticles {
+    height: 100%;
+  }
+
+  .upper,
+  .lower {
+    width: 100%;
+    margin: 0 0 5% 0;
+  }
+
+  .articleLink {
+    height: 100%;
+  }
+
+  .articleLink .articleCard {
+    flex-direction: column;
+  }
+
+  .articleLink .articleCard > img {
+    max-width: 100%;
+  }
+
+  .articleLink .articleCard .articleCardText {
+    padding: 5% 8% 5% 8%;
+  }
+
+  .articleLink .articleCard .articleCardText > p {
+    text-align: start;
+  }
+
+  .articleLink .articleCard .articleCardText > p::after {
+    display: none;
+  }
+
+  /* STYLES OF ARTICLES CONTENT */
+
+  .articleContent .articleContentBody {
+    font-size: 18px;
+  }
 
   /* STYLES OF GALLERY */
+
+  .gallery {
+    margin: 10% 0 0 0;
+  }
 
   .gallery > div {
     width: 90%;

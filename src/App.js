@@ -40,7 +40,7 @@ function App() {
           
           <Route exact path="/">
             <Home />
-            <Circle classi="circle" src={require('./img/keima.jpg')} alt="circle-image" />
+            <Circle className="circle" src={require('./img/keima.jpg')} alt="circle-image" />
             <Suspense fallback={<div className="suspense-div"><h1 className="suspense-h1">Loading Posts...</h1></div>}>
               <ArticleHome />
             </Suspense>

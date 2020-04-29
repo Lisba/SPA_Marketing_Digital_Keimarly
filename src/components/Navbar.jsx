@@ -7,7 +7,7 @@ const Navbar = () => {
 
     function showMenu()
     {
-        document.getElementById('burgerMenuOpened').style.left = '0%'
+        document.getElementById('burgerMenuOpened').style.left = '10%'
     }
 
     function hideMenu()

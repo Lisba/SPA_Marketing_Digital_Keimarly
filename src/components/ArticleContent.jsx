@@ -47,7 +47,7 @@ const ArticleContent = () => {
                             <div className="articleContentDate">{articleData.date}</div>
                             <div className="articleContentImgDiv"><img className="articleContentImg" src={require('../' + articleData.cover_image)} alt="img"/></div>
                         </div>
-                        <div className="articleContentDiv">
+                        <div className="articleContentBody">
                             <Suspense fallback={<div className="suspense-div"><h1 className="suspense-h1">Loading Post...</h1></div>}>
                                 <Post postContent={post}/>
                             </Suspense>
