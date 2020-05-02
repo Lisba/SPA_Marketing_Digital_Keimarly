@@ -9,7 +9,7 @@ const OnlineEntrepreneurship = () => {
     return(
         <div className="online-entrepreneurship">
             <Parallax blur={0} bgImage={require('../img/woman-drinking-coffee.jpg')} bgImageAlt="computer-desk" strength={600} bgImageStyle={{top:'-50%'}} >
-                <h1>Emprende Online >>></h1>
+                <h1>Emprende Online</h1>
             </Parallax>
             <ul>
                 {
