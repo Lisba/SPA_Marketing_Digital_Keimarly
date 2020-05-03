@@ -323,7 +323,7 @@
 }
 
 .online-entrepreneurship .react-parallax .react-parallax-bgimage {
-  top: 50% !important;
+  top: 48% !important;
   filter: brightness(0.5) !important;
 }
 
@@ -546,8 +546,8 @@
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #notfound .notfound:after {
@@ -556,13 +556,13 @@
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50% , -50%);
-      -ms-transform: translate(-50% , -50%);
-          transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
   width: 100%;
   height: 500px;
   background-color: rgba(255, 255, 255, 0.7);
   -webkit-box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.7) inset;
-          box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.7) inset;
+  box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.7) inset;
   z-index: -1;
 }
 
@@ -585,8 +585,8 @@
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 220px;
   margin: 0px;
   color: #222225;
@@ -766,6 +766,10 @@
 
   /* STYLES OF ONLINE-ENTREPRENEURSHIP */
 
+  .online-entrepreneurship {
+    min-height: 500px;
+  }
+
   .online-entrepreneurship .react-parallax .react-parallax-content {
     width: 100%;
     margin: 0;
@@ -779,37 +783,54 @@
   }
 
   .online-entrepreneurship .react-parallax .react-parallax-bgimage {
-    top: 43% !important;
+    top: 46% !important;
     left: 83% !important;
   }
 
   .online-entrepreneurship > ul > a > .div5 {
     width: 100%;
     top: 17%;
-    left: 67%;
+    left: 0;
+  }
+
+  .online-entrepreneurship > ul > a > .div5 > img {
+    margin: 0 0 0 70%;
   }
 
   .online-entrepreneurship > ul > a > .div6 {
     width: 100%;
     top: 35%;
-    left: 76%;
+    left: 0;
+  }
+
+  .online-entrepreneurship > ul > a > .div6 > img {
+    margin: 0 0 0 78%;
   }
 
   .online-entrepreneurship > ul > a > .div7 {
     width: 100%;
     top: 50%;
-    left: 83%;
+    left: 0;
+  }
+
+  .online-entrepreneurship > ul > a > .div7 > img {
+    margin: 0 0 0 82%;
   }
 
   .online-entrepreneurship > ul > a > .div8 {
     width: 100%;
     top: 70%;
-    left: 71%;
+    left: 0;
+  }
+
+  .online-entrepreneurship > ul > a > .div8 > img {
+    margin: 0 0 0 68%;
   }
 
   .online-entrepreneurship > ul > a > div > img {
     width: 14%;
   }
+
   /* STYLES OF GALLERY */
 
   .gallery {
@@ -875,12 +896,19 @@
     margin: 0 0 0 2%;
     font-size: x-large;
   }
+
+    /* STYLES OF 404 NOT FOUND PAGE */
+
+  #notfound .notfound-bg {
+    background-position: 43% 0%;
+  }
   
 }
 
-/* STYLES OF 404 NOT FOUND PAGE */
-    
 @media only screen and (max-width: 480px) {
+  
+  /* STYLES OF 404 NOT FOUND PAGE */
+  
   .notfound .notfound-404 {
     height: 146px;
   }
