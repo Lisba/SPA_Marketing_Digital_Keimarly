@@ -110,5 +110,19 @@ export default [
         tags: ["marketing digital", "branding", "marca", "guia"],
         description: "Instagram Article! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años. Tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
         date: "Apr 20, 2020"
+    },
+    {
+        id: 9,
+        title: "¿Qué es el marketing digital?",
+        folder: "./posts/post9.mdx",
+        icon: "img/i-color.png",
+        cover_image: "img/smilingWoman.jpg",
+        author: {
+            "name": "Kei Cisnero",
+            "email": "keimarly.mc@gmail.com"
+            },
+        tags: ["marketing digital", "guia"],
+        description: "Marketing Digital.",
+        date: "May 11, 2020"
     }
 ];
