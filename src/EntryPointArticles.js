@@ -10,7 +10,7 @@ export default [
             "email": "keimarly.mc@gmail.com"
             },
         tags: ["marketing digital", "guia"],
-        description: "En estos últimos cuatro años, millones de personas siguen incorporándose a internet. Para subir contenido, canciones, comprar, vender, hacer negocios e interactuar por internet. Debemos estar preparados para hacer negocios con estos nuevos potenciales clientes. Lo que se busca es llegar a mercados más amplios, la meta es incorporar a la mayor cantidad de personas posibles que aún no tienen acceso a internet. Existen iniciativas como la de Facebook (internet.or) que intentan lograr el acceso wifi a través de aviones o Project loom, por medio de globos aerostáticos. Hay muchas oportunidades de negocios todavía, pero para desarrollarlas tenemos que entender en qué momento y qué sucede con cada una de estas tecnologías.",
+        description: "En estos últimos cuatro años, millones de personas siguen incorporándose a internet. Para subir contenido, hacer negocios e interactuar por internet. Debemos estar preparados para hacer negocios con estos nuevos potenciales clientes. Lo que se busca es llegar a mercados más amplios, la meta es incorporar a la mayor cantidad de personas posibles que aún no tienen acceso a internet.",
         date: "Apr 23, 2020"
     },
     {
@@ -122,7 +122,7 @@ export default [
             "email": "keimarly.mc@gmail.com"
             },
         tags: ["marketing digital", "guia"],
-        description: "Marketing Digital.",
+        description: "Marketing Digital. Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años.",
         date: "May 11, 2020"
     }
 ];

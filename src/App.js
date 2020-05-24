@@ -10,6 +10,7 @@ import Circle from './components/Circle';
 import NotFound from './components/NotFoundPage';
 
 const ArticleHome = React.lazy(() => import('./components/ArticleHome'));
+const ArticleList = React.lazy(() => import('./components/ArticleList'));
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
           
           <Route exact path="/articles">
             <Suspense fallback={<div className="suspense-div"><h1 className="suspense-h1">Loading Posts...</h1></div>}>
-              <ArticleHome />
+              <ArticleList />
             </Suspense>
             <Footer />
           </Route>

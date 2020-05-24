@@ -16,8 +16,10 @@ const ArticleCard = (props) => {
 
     return(
         <div className={props.className}>
-            <img src={require('../' + actualData.icon)} alt={props.alt}/>
-            <div className="articleCardText">
+            <div className={props.imgContainer}>
+                <img src={require('../' + actualData.icon)} alt={props.alt} width={props.width} height={props.height} />
+            </div>
+            <div className={props.textContainer}>
                 <h2>{props.title}</h2>
                 <p>{props.text}</p>
             </div>

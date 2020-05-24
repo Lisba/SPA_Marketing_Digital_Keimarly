@@ -60,7 +60,7 @@
 }
 
 .navBarDiv div div a {
-  color: black;
+  color: rgb(91, 91, 91);
 }
 
 .navBarDiv div div .wapp:hover,
@@ -124,7 +124,7 @@
 }
 
 .home .react-parallax .react-parallax-content > h1 {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 
@@ -172,7 +172,7 @@
   padding: 1%;
   font-weight: 500;
   text-decoration: underline;
-  color: #000;
+  color: rgb(92, 92, 92);
 }
 
 .groupArticles {
@@ -187,24 +187,9 @@
   justify-content: space-around;
 }
 
-.groupArticles div img {
+/* .groupArticles div img {
   max-width: 45%;
-}
-
-.articleLink {
-  display: flex;
-  width: 100%;
-  margin: 1%;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  height: 33vh;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-}
-
-.articleCard {
-  width: 100%;
-  display: flex;
-}
+} */
 
 .upper {
   align-self: flex-start;
@@ -216,14 +201,37 @@
   width: 44%;
 }
 
+.articleLink {
+  display: flex;
+  width: 100%;
+  margin: 1%;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  height: 37vh;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.articleCard {
+  width: 100%;
+  display: flex;
+}
+
+.articleCardImg {
+  width: 50%;
+}
+
 .articleCardText {
+  width: 100%;
   padding: 1% 5% 1% 5%;
-  background: #ffffff;
-  /*width: la necesaria;*/
   margin: 0;/*no influye*/
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: rgb(91, 91, 91);
+  background: #ffffff;
   line-height: 160%;
   position: relative;
-  color: #000000;
+  /*width: la necesaria;*/
 }
 
 .articleLink:hover {
@@ -231,22 +239,23 @@
 }
 
 .articleCardText h2 {
-  font-size: 160%;
+  text-align: center;
+  font-size: 140%;
 }
 
 .articleCardText p {
   max-height: 8rem;/*line-height por nº de líneas*/
   overflow: hidden;
-  text-align: justify;
+  text-align: center;
 }
 
-.articleCardText p::after {
+/* .articleLink .articleCardText p::after {
   content: '...';
   background: #ffffff;
   position: absolute;
   top: 173px;
-  right: 19px;/*max-height menos 1 line-height*/
-}
+  right: 19px; max-height menos 1 line-height
+} */
 
 .articlesDiv .articleReadMoreButton {
   width: 100%;
@@ -276,6 +285,55 @@
 .btn {
   width: 100%;
   padding: 8% 12% 8% 12%;
+}
+
+/* STYLES OF ARTICLES LIST */
+
+.articleCardListDiv {
+  display: flex;
+  justify-content: center;
+}
+
+
+.articleCardListUl {
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aritcleCardListLi {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  border-bottom: 1px #ddd solid;
+}
+
+.articleLinkList:hover {
+  text-decoration: none;
+}
+
+.articleCardListContainer {
+  width: 100%;
+  display: flex;
+}
+
+.articleListText {
+  padding: 1% 5% 1% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(92, 92, 92);
+  text-align: center;
+}
+
+.articleListText > h2 {
+  width: 80%;
+  font-size: 1.6rem;
+}
+
+.articleListText > p {
+  width: 100%;
 }
 
 /* STYLES OF ARTICLES CONTENT */
@@ -761,12 +819,17 @@
     flex-direction: column;
   }
 
-  .articleLink .articleCard > img {
-    max-width: 100%;
+  .articleLink .articleCard .articleCardImg {
+    width: 100%;
+  }
+
+  .articleLink .articleCard .articleCardImg > img {
+    width: 100%;
   }
 
   .articleLink .articleCard .articleCardText {
     padding: 5% 8% 5% 8%;
+    width: 100%;
   }
 
   .articleLink .articleCard .articleCardText > p {
