@@ -9,7 +9,7 @@ const Post = React.lazy( () => import(`./Post`));
 const ArticleContent = () => {
     
     let {id} = useParams();
-    let parsedId = parseInt(id); // For console warning.
+    let parsedId = parseInt(id); // For use strict equality operator below.
     const [post, setPost] = React.useState('');
     let articleData = {};
     let boolean = false;
@@ -21,15 +21,15 @@ const ArticleContent = () => {
             articleData = item;
             boolean = true;
         }
-        return true;
+        return boolean;
     });
     
     React.useEffect( () => {
 
-        // const MDXPost = await import(`../posts/post${parsedId}.mdx`); //With Asyn/Await method.
         import(`../posts/post${parsedId}.mdx`) //With promise method.
         .then(response => setPost(response.default))
         .catch(error => console.log(error.message))
+        // const MDXPost = await import(`../posts/post${parsedId}.mdx`); //With Asyn/Await method.
         // const postObj = require('../posts/post' + parsedId + '.mdx'); //With require() method.
         // setPost(postObj.default)
 

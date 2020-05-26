@@ -18,7 +18,7 @@ const ArticleHome = () => {
                         ( (item.id <= 4) ?
                             <li key={item.id} className={`${item.id % 2 === 0 ? 'lower' : 'upper'}`}>
                                 <Link to={`/articles/${item.id}`} className={`articleLink card${item.id}`}>
-                                    <ArticleCard className={classNameArticleCard} imgRoute={item.cover_image} alt={item.cover_image} title={item.title} text={item.description} imgContainer="articleCardImg" textContainer="articleCardText" width="250" height="250" />
+                                    <ArticleCard className={classNameArticleCard} icon={item.icon} imgRoute={item.cover_image} alt={item.cover_image} title={item.title} text={item.description} imgContainer="articleCardImg" textContainer="articleCardText" width="250" height="250" />
                                 </Link>
                             </li> : null
                         ))
