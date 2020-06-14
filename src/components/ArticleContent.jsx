@@ -26,7 +26,7 @@ const ArticleContent = () => {
     
     React.useEffect( () => {
 
-        import(`../posts/post${parsedId}.mdx`) //With promise method.
+        import(`../posts/post${parsedId}.mdx`) //With native promise method.
         .then(response => setPost(response.default))
         .catch(error => console.log(error.message))
         // const MDXPost = await import(`../posts/post${parsedId}.mdx`); //With Asyn/Await method.
