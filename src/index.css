@@ -294,7 +294,6 @@
   justify-content: center;
 }
 
-
 .articleCardListUl {
   width: 90%;
   max-width: 900px;
@@ -838,6 +837,19 @@
 
   .articleLink .articleCard .articleCardText > p::after {
     display: none;
+  }
+
+  /* STYLES OF ARTICLES LIST */
+
+  .articleCardListContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .articleListText {
+    padding-top: 5%;
   }
 
   /* STYLES OF ARTICLES CONTENT */
