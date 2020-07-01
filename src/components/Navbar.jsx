@@ -26,11 +26,11 @@ const Navbar = () => {
                 <i className="fas fa-bars abrir" onClick={showMenu}></i>
             </div>
             <nav id="burgerMenuOpened" className="burgerMenuOpened" onClick={hideMenu}>
-                    <i className="fas fa-times cerrar"></i>
-                    <ul className="socialNetworksList">
-                        <NavButtons className="burgerMenuButtons" />
-                    </ul>
-                </nav>
+                <i className="fas fa-times cerrar"></i>
+                <ul className="socialNetworksList">
+                    <NavButtons className="burgerMenuButtons" />
+                </ul>
+            </nav>
         </nav>
     )
 }

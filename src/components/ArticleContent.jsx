@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { useState, useEffect, Fragment, Suspense } from 'react';
 import Footer from './Footer';
 import { useParams } from 'react-router-dom';
 import Articles from '../EntryPointArticles';
@@ -10,9 +10,15 @@ const ArticleContent = () => {
     
     let {id} = useParams();
     let parsedId = parseInt(id); // For use strict equality operator below.
-    const [post, setPost] = React.useState('');
+    const [post, setPost] = useState('');
     let articleData = {};
     let boolean = false;
+
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'auto'
+    });
     
     Articles.map(item => 
     {
@@ -24,7 +30,7 @@ const ArticleContent = () => {
         return boolean;
     });
     
-    React.useEffect( () => {
+    useEffect( () => {
 
         import(`../posts/post${parsedId}.mdx`) //With native promise method.
         .then(response => setPost(response.default))
@@ -36,10 +42,10 @@ const ArticleContent = () => {
     }, [parsedId]);
 
     return (
-        <React.Fragment>
+        <Fragment>
             {
                 (!boolean) ? <NotFoundPage /> :
-                <React.Fragment>
+                <Fragment>
                     <article className="articleContent">
                         <div className="articleContentHeader">
                             <div className="articleContentTitleDiv"><h1 className="articleContentTitle">{articleData.title}</h1></div>
@@ -54,9 +60,9 @@ const ArticleContent = () => {
                         </div>
                     </article>
                     <Footer />
-                </React.Fragment>
+                </Fragment>
             } {/*This ternary operator for the case a Dynamic Route doesn't exist*/}
-        </React.Fragment>
+        </Fragment>
     )
 }
 

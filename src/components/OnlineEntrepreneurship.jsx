@@ -14,11 +14,10 @@ const OnlineEntrepreneurship = () => {
             <ul>
                 {
                     Articles.map(item => 
-                    ( (item.id >= 5 && item.id <= 8) ?
+                    ( (item.id >= 5 && item.id <= 8) &&
                         <Link key={item.id} to={`/articles/${item.id}`}>
                             <ImgOnlineEntrepreneurship classe={`div${item.id}`} src={require('../' + item.icon)} alt={item.title} />
                         </Link>
-                        : null
                     ))
                 }
             </ul>
