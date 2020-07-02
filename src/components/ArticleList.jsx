@@ -5,6 +5,12 @@ import ArticleCard from './ArticleCard';
 
 const ArticleList = () => {
 
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+
     return (
         <div className="articleCardListDiv">
             <ul className="articleCardListUl">

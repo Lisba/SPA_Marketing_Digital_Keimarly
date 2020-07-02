@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Fragment, Suspense } from 'react';
-import Footer from './Footer';
 import { useParams } from 'react-router-dom';
 import Articles from '../EntryPointArticles';
 import NotFoundPage from './NotFoundPage';
@@ -59,7 +58,6 @@ const ArticleContent = () => {
                             </Suspense>
                         </div>
                     </article>
-                    <Footer />
                 </Fragment>
             } {/*This ternary operator for the case a Dynamic Route doesn't exist*/}
         </Fragment>

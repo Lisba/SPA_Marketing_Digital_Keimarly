@@ -1,3 +1,3 @@
 # SPA_Marketing_Digital_Keimarly
 
-Single Page Aplication made with React for a Marketing Digital client.
+A Single Page Aplication made with React and react router for a Marketing Digital customer.

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 
-const Home = (props) => {
+const Home = () => {
     return(
         <div className="home">
             <Parallax
@@ -11,7 +11,7 @@ const Home = (props) => {
             strength={600}
             bgImageStyle={{top:'-50%'}}
             >
-                <h1>Soy Kei Cisnero, especialista en Marketing Digital y Administracion de negocios</h1>
+                <h1>Soy Kei Cisnero, te invito a que juntos incursionemos en este maravilloso mundo del marketing online</h1>
             </Parallax>
         </div>
     )
