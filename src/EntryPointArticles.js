@@ -1,6 +1,7 @@
 export default [
     {
         id: 1,
+        home: 1,
         title: "Emprendamos Online",
         folder: "./posts/post10.mdx",
         icon: "img/icon-person-holding-samsung-galaxy-s8.jpg",
@@ -87,7 +88,8 @@ export default [
     },
     {
         id: 7,
-        title: "Hotmart Article",
+        home: 3,
+        title: "¿Qué es hotmart?",
         folder: "./posts/post7.mdx",
         icon_Online_Entrepreneurship: "img/h-color.png",
         icon: "img/h-color.png",
@@ -96,13 +98,13 @@ export default [
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
             },
-        tags: ["marketing-digital", "branding", "marca", "guia"],
-        description: "Hotmart Article! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años. Tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
-        date: "Apr 20, 2020"
+        tags: ["hotmart", "marketing de afiliacion", "marketing digital"],
+        description: "Es una plataforma digital en la cual se distribuyen productos online, digitales, funcionando por medio del marketing de afiliación.",
+        date: "July 2, 2020"
     },
     {
         id: 8,
-        title: "Instagram Article",
+        title: "¿Por qué es una excelente alternativa generar ingresos por instagram?",
         folder: "./posts/post8.mdx",
         icon_Online_Entrepreneurship: "img/i-color.png",
         icon: "img/i-color.png",
@@ -111,9 +113,9 @@ export default [
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
             },
-        tags: ["marketing-digital", "branding", "marca", "guia"],
-        description: "Instagram Article! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años. Tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
-        date: "Apr 20, 2020"
+        tags: ["marketing digital", "instagram"],
+        description: "Son muchisímas las empresas a nivel mundial que usan esta red social para promocionar sus productos y servicios.",
+        date: "July 2, 2020"
     },
     {
         id: 9,
@@ -125,8 +127,38 @@ export default [
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
             },
-        tags: ["marketing-digital", "guia"],
-        description: "Marketing Digital. Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años.",
+        tags: ["marketing digital", "conceptos"],
+        description: "El marketing digital es un conjunto de estrategias direccionadas a la comunicción y comercialización de productos y servicios.Por este medio las personas satisfacen deseos y necesidades a través de un proyecto, producto, servicio, creación o negocición.",
         date: "May 11, 2020"
+    },
+    {
+        id: 10,
+        home: 2,
+        title: "Nómada digital",
+        folder: "./posts/post10.mdx",
+        icon: "img/icon-computer-desk.jpg",
+        cover_image: "img/computer-desk.jpg",
+        author: {
+            "name": "Kei Cisnero",
+            "email": "keimarly.mc@gmail.com"
+            },
+        tags: ["marketing digital", "nomada digital", "digital", "nomada"],
+        description: "Convertirse un nómada digital, es romper con esquemas y paradigmas impuestos por la sociedad. Es perseguir tu libertad financiera, de tiempo y de espacio. Es un estilo de vida en el cuál dejas atrás un modo de vivir tradicional, el trabajo rutinario de 8:00am a 5:00pm, en el cual es más valorada tu presencia y asistencia a la empresa que tu productividad y mérito por logros o resultados obtenidos.",
+        date: "July 2, 2020"
+    },
+    {
+        id: 11,
+        home: 4,
+        title: "Marketing de afiliación",
+        folder: "./posts/post11.mdx",
+        icon: "img/icon-computer-desk.jpg",
+        cover_image: "img/computer-desk.jpg",
+        author: {
+            "name": "Kei Cisnero",
+            "email": "keimarly.mc@gmail.com"
+            },
+        tags: ["marketing digital", "marketing de afiliacion"],
+        description: "Con el mundo de la tecnología en auge, en el marketing digital aparecen nuevas alternativas para atraer la atención de los usuarios, internautas y consumidores.",
+        date: "July 2, 2020"
     }
 ];

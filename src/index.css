@@ -191,14 +191,28 @@
   max-width: 45%;
 } */
 
-.upper {
+.upper1 {
   align-self: flex-start;
   width: 44%;
+  order: 1;
 }
 
-.lower {
+.lower2 {
   align-self: flex-end;
   width: 44%;
+  order: 2;
+}
+
+.upper3 {
+  align-self: flex-start;
+  width: 44%;
+  order: 3;
+}
+
+.lower4 {
+  align-self: flex-end;
+  width: 44%;
+  order: 4;
 }
 
 .articleLink {
