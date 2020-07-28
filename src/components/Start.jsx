@@ -1,9 +1,9 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 
-const Home = () => {
+const Start = () => {
     return(
-        <div className="home">
+        <div className="start">
             <Parallax
             blur={0}
             bgImage={require('../img/laptop-next-to-coffe-cup.jpg')}
@@ -11,10 +11,10 @@ const Home = () => {
             strength={600}
             bgImageStyle={{top:'-50%'}}
             >
-                <h1>Soy Kei Cisnero, te invito a que juntos incursionemos en este maravilloso mundo del marketing online</h1>
+                <h1>No sabes como empezar aunque sientes que es momento de emprender. Incursionemos juntos en el marketing digital</h1>
             </Parallax>
         </div>
     )
 }
 
-export default Home;
+export default Start;

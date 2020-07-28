@@ -1,12 +1,12 @@
 import React, { useState, useEffect, Fragment, Suspense } from 'react';
 import { useParams } from 'react-router-dom';
 import Articles from '../EntryPointArticles';
-import NotFoundPage from './NotFoundPage';
+import NotFoundPage from '../containers/NotFoundPage';
 
 const Post = React.lazy( () => import(`./Post`));
 
 const ArticleContent = () => {
-    
+
     let {id} = useParams();
     let parsedId = parseInt(id); // For use strict equality operator below.
     const [post, setPost] = useState('');
@@ -18,8 +18,8 @@ const ArticleContent = () => {
         left: 0,
         behavior: 'auto'
     });
-    
-    Articles.map(item => 
+
+    Articles.map(item =>
     {
         if(item.id === parsedId)
         {
@@ -28,7 +28,7 @@ const ArticleContent = () => {
         }
         return boolean;
     });
-    
+
     useEffect( () => {
 
         import(`../posts/post${parsedId}.mdx`) //With native promise method.
@@ -53,7 +53,7 @@ const ArticleContent = () => {
                             <div className="articleContentImgDiv"><img className="articleContentImg" src={require('../' + articleData.cover_image)} alt="img"/></div>
                         </div>
                         <div className="articleContentBody">
-                            <Suspense fallback={<div className="suspense-div"><h1 className="suspense-h1">Loading Post...</h1></div>}>
+                            <Suspense delayMs={500} fallback={<div className="lds-ring"><div></div><div></div><div></div><div></div></div>}>
                                 <Post postContent={post}/>
                             </Suspense>
                         </div>

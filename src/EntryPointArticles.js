@@ -30,6 +30,7 @@ export default [
     },
     {
         id: 3,
+        home: 3,
         title: "¿Que es el branding de marca?",
         folder: "./posts/post2.mdx",
         icon: "img/icon-workDesk.jpg",
@@ -44,6 +45,7 @@ export default [
     },
     {
         id: 4,
+        home: 4,
         title: "¿Por que hacemos Marketing?",
         folder: "./posts/post3.mdx",
         icon: "img/icon-woman-raising-hands.jpg",
@@ -61,7 +63,7 @@ export default [
         title: "Google Ads Article",
         folder: "./posts/post5.mdx",
         icon_Online_Entrepreneurship: "img/g-color.png",
-        icon: "img/g-color.png",
+        icon: "img/icon-computer-desk.jpg",
         cover_image: "img/computer-with-keyboard.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -88,11 +90,10 @@ export default [
     },
     {
         id: 7,
-        home: 3,
         title: "¿Qué es hotmart?",
         folder: "./posts/post7.mdx",
         icon_Online_Entrepreneurship: "img/h-color.png",
-        icon: "img/h-color.png",
+        icon: "img/icon-computer-desk.jpg",
         cover_image: "img/person-using-macbook.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -107,7 +108,7 @@ export default [
         title: "¿Por qué es una excelente alternativa generar ingresos por instagram?",
         folder: "./posts/post8.mdx",
         icon_Online_Entrepreneurship: "img/i-color.png",
-        icon: "img/i-color.png",
+        icon: "img/icon-computer-desk.jpg",
         cover_image: "img/smilingWoman.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -148,7 +149,6 @@ export default [
     },
     {
         id: 11,
-        home: 4,
         title: "Marketing de afiliación",
         folder: "./posts/post11.mdx",
         icon: "img/icon-computer-desk.jpg",

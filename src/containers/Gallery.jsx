@@ -18,19 +18,19 @@ const Gallery = () => {
         'img/paris-eiffel-tower.jpg',
         'img/photography-of-airplane-during-sunrise.jpg'
     ];
-    
+
     return(
         <div className="gallery">
             <Carousel autoPlay infiniteLoop stopOnHover={false} >
                 {
                     images.map((item, index) => (
                             <div key={index}>
-                                <img className={'img'} src={require('../' + item)} alt={item} /> 
+                                <img className={'img'} src={require('../' + item)} alt={item} />
                             </div>
                         )
                     )
                 }
-            </Carousel> 
+            </Carousel>
         </div>
     )
 }
