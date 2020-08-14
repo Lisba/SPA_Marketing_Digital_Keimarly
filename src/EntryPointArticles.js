@@ -6,6 +6,7 @@ export default [
         folder: "./posts/post10.mdx",
         icon: "img/icon-person-holding-samsung-galaxy-s8.jpg",
         cover_image: "img/outdoors-entrepreneurship.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -20,6 +21,7 @@ export default [
         folder: "./posts/post1.mdx",
         icon: "img/icon-electronics.jpg",
         cover_image: "img/electronics.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -35,6 +37,7 @@ export default [
         folder: "./posts/post2.mdx",
         icon: "img/icon-workDesk.jpg",
         cover_image: "img/workDesk.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -50,6 +53,7 @@ export default [
         folder: "./posts/post3.mdx",
         icon: "img/icon-woman-raising-hands.jpg",
         cover_image: "img/woman-raising-hands.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -65,6 +69,7 @@ export default [
         icon_Online_Entrepreneurship: "img/g-color.png",
         icon: "img/icon-computer-desk.jpg",
         cover_image: "img/computer-with-keyboard.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -80,6 +85,7 @@ export default [
         icon_Online_Entrepreneurship: "img/y-color.png",
         icon: "img/icon-youtube.jpg",
         cover_image: "img/youtube-image.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -95,6 +101,7 @@ export default [
         icon_Online_Entrepreneurship: "img/h-color.png",
         icon: "img/icon-computer-desk.jpg",
         cover_image: "img/person-using-macbook.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -110,6 +117,7 @@ export default [
         icon_Online_Entrepreneurship: "img/i-color.png",
         icon: "img/icon-computer-desk.jpg",
         cover_image: "img/smilingWoman.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -124,6 +132,7 @@ export default [
         folder: "./posts/post9.mdx",
         icon: "img/icon-computer-desk.jpg",
         cover_image: "img/computer-desk.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -139,6 +148,7 @@ export default [
         folder: "./posts/post10.mdx",
         icon: "img/icon-computer-desk.jpg",
         cover_image: "img/computer-desk.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -153,6 +163,7 @@ export default [
         folder: "./posts/post11.mdx",
         icon: "img/icon-computer-desk.jpg",
         cover_image: "img/computer-desk.jpg",
+        placeHolder_Image: "img/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
