@@ -8626,9 +8626,9 @@ pretty-format@^25.1.0:
     react-is "^16.12.0"
 
 prismjs@^1.15.0:
-  version "1.20.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.20.0.tgz#9b685fc480a3514ee7198eac6a3bf5024319ff03"
-  integrity sha512-AEDjSrVNkynnw6A+B1DsFkd6AVdTnp+/WoUixFRULlCLZVRZlVQMVWio/16jv7G1FscUxQxOQhWwApgbnxr6kQ==
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
+  integrity sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA==
   optionalDependencies:
     clipboard "^2.0.0"
 
@@ -8990,7 +8990,7 @@ react-router@5.1.2:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-scripts-mdx@3.0.3:
+react-scripts-mdx@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/react-scripts-mdx/-/react-scripts-mdx-3.0.3.tgz#258db69e3f099e9eb3387eaa549dff763ad803a8"
   integrity sha512-bydNZgHT8jW3Wzy8BnA/LxmtKIiuyHRK/8eTJ1M4lYFhomYY8bwW7xjEgeeBFDJL+UJhn+2EatEgm+IYfX4Yvg==
