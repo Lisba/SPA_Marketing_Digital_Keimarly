@@ -3616,9 +3616,9 @@ decamelize@^2.0.0:
     xregexp "4.0.0"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.1.1"
@@ -8990,7 +8990,7 @@ react-router@5.1.2:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-scripts-mdx@3.0.3:
+react-scripts-mdx@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/react-scripts-mdx/-/react-scripts-mdx-3.0.3.tgz#258db69e3f099e9eb3387eaa549dff763ad803a8"
   integrity sha512-bydNZgHT8jW3Wzy8BnA/LxmtKIiuyHRK/8eTJ1M4lYFhomYY8bwW7xjEgeeBFDJL+UJhn+2EatEgm+IYfX4Yvg==
